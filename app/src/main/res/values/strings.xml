@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Basic App</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+    <string name="video_title">Video Title</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="date">Date</string>
+    <string name="media_url_dash">https://storage.googleapis.com/exoplayer-test-media-0/play.mp3</string>
+    <string name="search_video">Search Video</string>
+    <string name="media_url_mp3">https://storage.googleapis.com/exoplayer-test-media-0/play.mp3</string>
+</resources>

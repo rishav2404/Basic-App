@@ -4,8 +4,6 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     kotlin("plugin.serialization") version "1.9.22"
 }
-//val localProperties =  Properties()
-//localProperties.load( FileInputStream(rootProject.file("local.properties")))
 
 android {
     namespace = "com.rishav.basicapp"
@@ -22,7 +20,6 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
-//        buildConfigField("String", "SUPABASE_APIKEY", localProperties["supabaseApi"].toString())
     }
 
     buildTypes {
@@ -78,7 +75,6 @@ dependencies {
     implementation(platform("io.github.jan-tennert.supabase:bom:2.4.0"))
     implementation(libs.postgrest.kt)
     implementation(libs.ktor.client.android)
-
 
     // Picasso
     implementation(libs.picasso)

@@ -11,18 +11,14 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.search.SearchView
 import com.rishav.basicapp.databinding.ActivityMainBinding
 import com.rishav.basicapp.media.MediaActivity
-import io.github.jan.supabase.BuildConfig
-import io.github.jan.supabase.annotations.SupabaseInternal
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.postgrest.from
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.util.*
 
 
 class MainActivity() : AppCompatActivity(), OnQueryTextListener {

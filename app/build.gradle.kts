@@ -3,6 +3,14 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     kotlin("plugin.serialization") version "1.9.22"
+    id ("earth.levi.dotenv-android") version "1.3.0"
+}
+
+dotenv {
+    // the package name that is added to the top of your source code file: `import X.Y.Z`
+    packageName = "com.rishav.basicapp"
+    // the path to the source code in your Android app module. This is probably `src/main/java` but could be something else like `src/main/kotlin`
+    sourcePath = "src/main/java/"
 }
 
 android {

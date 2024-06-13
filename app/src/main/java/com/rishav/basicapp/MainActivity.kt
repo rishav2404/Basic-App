@@ -24,8 +24,8 @@ import kotlinx.coroutines.withContext
 class MainActivity() : AppCompatActivity(), OnQueryTextListener {
 
     val supabase = createSupabaseClient(
-        supabaseUrl = "https://syzaktxwpunuiimbyyaa.supabase.co",
-        supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN5emFrdHh3cHVudWlpbWJ5eWFhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTUzNDA5NDMsImV4cCI6MjAzMDkxNjk0M30.HdN6hORI0vHdDPdfPSO7rUpQIz9-aBO63uOtXQrwtxo"
+        supabaseUrl = "Env.SUPABASE_URL",
+        supabaseKey = "Env.SUPABASE_API"
     ) {
         install(Postgrest)
     }
